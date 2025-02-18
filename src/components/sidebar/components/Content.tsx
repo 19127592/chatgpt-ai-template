@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react';
 import NavLink from '@/components/link/NavLink';
 //   Custom components
-import avatar4 from '/public/img/avatars/avatar4.png';
+import avatar4 from '/public/img/avatars/avatarSimmmple.png';
 import { NextAvatar } from '@/components/image/Avatar';
 import APIModal from '@/components/apiModal';
 import Brand from '@/components/sidebar/components/Brand';
@@ -70,9 +70,9 @@ function SidebarContent(props: SidebarContent) {
         </Box>
       </Stack>
 
-      <Box mt="60px" width={'100%'} display={'flex'} justifyContent={'center'}>
+      {/* <Box mt="60px" width={'100%'} display={'flex'} justifyContent={'center'}>
         <SidebarCard />
-      </Box>
+      </Box> */}
       <APIModal setApiKey={setApiKey} sidebar={true} />
       <Flex
         mt="8px"
@@ -84,7 +84,7 @@ function SidebarContent(props: SidebarContent) {
       >
         <NextAvatar h="34px" w="34px" src={avatar4} me="10px" />
         <Text color={textColor} fontSize="xs" fontWeight="600" me="10px">
-          Adela Parkson
+          Le Minh Tri
         </Text>
         <Menu>
           <MenuButton

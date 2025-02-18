@@ -159,19 +159,19 @@ export default function Chat(props: { apiKeyApp: string }) {
       direction="column"
       position="relative"
     >
-      <Img
+      {/* <Img
         src={Bg.src}
         position={'absolute'}
         w="350px"
         left="50%"
         top="50%"
         transform={'translate(-50%, -50%)'}
-      />
+      /> */}
       <Flex
         direction="column"
         mx="auto"
         w={{ base: '100%', md: '100%', xl: '100%' }}
-        minH={{ base: '75vh', '2xl': '85vh' }}
+        minH={{ base: '75vh', '2xl': '75vh' }}
         maxW="1000px"
       >
         {/* Model Change */}
@@ -183,7 +183,7 @@ export default function Chat(props: { apiKeyApp: string }) {
             mb="20px"
             borderRadius="60px"
           >
-            <Flex
+            {/* <Flex
               cursor={'pointer'}
               transition="0.3s"
               justify={'center'}
@@ -248,7 +248,7 @@ export default function Chat(props: { apiKeyApp: string }) {
                 />
               </Flex>
               GPT-3.5
-            </Flex>
+            </Flex> */}
           </Flex>
 
           <Accordion color={gray} allowToggle w="100%" my="0px" mx="auto">
@@ -403,24 +403,13 @@ export default function Chat(props: { apiKeyApp: string }) {
 
         <Flex
           justify="center"
-          mt="20px"
           direction={{ base: 'column', md: 'row' }}
           alignItems="center"
+          pt="30px"
         >
           <Text fontSize="xs" textAlign="center" color={gray}>
-            Free Research Preview. ChatGPT may produce inaccurate information
-            about people, places, or facts.
+            Chatbot AI có thể có lỗi trong kết quả trả lời. Vui lòng kiểm tra kỹ thông tin trước khi sử dụng.
           </Text>
-          <Link href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">
-            <Text
-              fontSize="xs"
-              color={textColor}
-              fontWeight="500"
-              textDecoration="underline"
-            >
-              ChatGPT May 12 Version
-            </Text>
-          </Link>
         </Flex>
       </Flex>
     </Flex>

@@ -68,15 +68,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                   mx="auto"
                   p={{ base: '20px', md: '30px' }}
                   pe="20px"
-                  minH="100vh"
                   pt="50px"
                 >
                   {children}
                   {/* <Component apiKeyApp={apiKey} {...pageProps} /> */}
                 </Box>
-                <Box>
+                {/* <Box>
                   <Footer />
-                </Box>
+                </Box> */}
               </Box>
             </Box>
           )}

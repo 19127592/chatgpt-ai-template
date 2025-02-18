@@ -60,7 +60,7 @@ export default function HeaderLinks(props: {
       borderRadius="30px"
       boxShadow={shadow}
     >
-      <SearchBar
+      {/* <SearchBar
         mb={() => {
           if (secondary) {
             return { base: '10px', md: 'unset' };
@@ -69,11 +69,11 @@ export default function HeaderLinks(props: {
         }}
         me="10px"
         borderRadius="30px"
-      />
+      /> */}
       <SidebarResponsive routes={routes} />
-      <APIModal setApiKey={setApiKey} />
+      {/* <APIModal setApiKey={setApiKey} /> */}
 
-      <Menu>
+      {/* <Menu>
         <MenuButton p="0px">
           <Icon
             mt="6px"
@@ -95,7 +95,6 @@ export default function HeaderLinks(props: {
           minW={{ base: 'unset' }}
           maxW={{ base: '360px', md: 'unset' }}
         >
-          {/* <Flex bgImage={navImage} borderRadius="16px" mb="28px" alt="" /> */}
           <Flex flexDirection="column">
             <Link
               isExternal
@@ -158,7 +157,7 @@ export default function HeaderLinks(props: {
             </Link>
           </Flex>
         </MenuList>
-      </Menu>
+      </Menu> */}
 
       <Button
         variant="no-hover"
@@ -231,7 +230,7 @@ export default function HeaderLinks(props: {
                 </Text>
               </MenuItem>
             </NavLink>
-            <MenuItem
+            {/* <MenuItem
               _hover={{ bg: 'none' }}
               _focus={{ bg: 'none' }}
               color={textColor}
@@ -241,7 +240,7 @@ export default function HeaderLinks(props: {
               <Text fontWeight="500" fontSize="sm">
                 Newsletter Settings
               </Text>
-            </MenuItem>
+            </MenuItem> */}
             <MenuItem
               _hover={{ bg: 'none' }}
               _focus={{ bg: 'none' }}
